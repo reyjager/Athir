@@ -1,0 +1,574 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+
+  width: 1920px;
+  height: 1349px;
+  border: 1px solid red;
+
+}
+
+.doctors-app {
+  padding: 67px 72px;
+  background-color: #F7F7F7;
+  width: 1776px;
+  height: 1215px;
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+}
+
+.doc-profile,
+.schedule-container,
+.doc-contacts {
+  background-color: #ffff;
+}
+
+.doc-profile {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #DCDCDC;
+  align-items: center;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #DCDCDC;
+}
+
+.doc-schedule {
+  width: 840px;
+}
+
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.doctors-name {
+  color: var(--Text, #2C2D33);
+  text-align: right;
+  font-family: Cairo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.doctors-position {
+  color: #A9A9A9;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.doctors-name,
+.doctors-position {
+  display: block;
+}
+
+.image-element {
+  width: 245px;
+  height: 309px;
+  border-radius: 10px;
+  background-color: #c8c8d0;
+  border-radius: 10px;
+  background-image: url(Rectangle\ 25.png);
+  margin-top: 60px;
+}
+
+.details {
+  direction: rtl;
+  display: flex;
+  width: 318px;
+  height: 308px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  margin-top: 91px;
+}
+
+.details ul li {
+  color: var(--Text, #2C2D33);
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+}
+
+/* ================================================ */
+.schedule-container {
+  width: 916px;
+  align-items: center;
+}
+
+.doc-schedule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.appointment {
+  color: var(--Text, #2C2D33);
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+  margin: 60px auto;
+}
+
+div.last-two {
+  display: none;
+}
+
+.doc-appointment-date {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 840px;
+  height: 455px;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  /* gap: 35px; */
+  direction: rtl;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.morning-schedule {
+  display: flex;
+  /* gap: 35px; */
+  direction: rtl;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.date-card {
+  display: flex;
+  box-sizing: border-box;
+  width: 140px;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+
+}
+
+.date-card:hover,
+.time-schedule:hover {
+  background-color: #2d686b62;
+}
+
+.contact-us .fa-light {
+  color: #2d686be9;
+}
+
+.info:hover span {
+  color: #2d686be9;
+}
+.day {
+  width: 100%;
+  height: 35px;
+  border-bottom: 1px solid #dad7d7;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.date {
+  color: #2D686B;
+  font-family: Tajawal;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: right;
+}
+
+.month-year {
+  font-family: Tajawal;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-bottom: 5px;
+
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  color: var(--Text, #2C2D33);
+  font-size: 32px;
+  font-weight: 700px;
+  margin-top: 25px;
+}
+
+.left>i,
+.right>i {
+  padding: 10px;
+}
+
+.morning-card,
+.afternoon-card {
+  text-align: end;
+  margin-bottom: 0;
+}
+
+.morning-schedule {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  flex-grow: 1;
+
+}
+
+.time-schedule>.time {
+  display: flex;
+  direction: rtl;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 105px;
+  height: 40px;
+  border: 1px solid #dad7d7;
+  border-radius: 5px;
+
+}
+
+/* ============================================== */
+
+.doc-appointment-time {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 742px;
+  gap: 30px;
+  margin-top: 60px;
+  margin-left: auto;
+}
+
+.morning-card,
+.afternoon-card {
+  margin-left: auto
+}
+
+.book-now-btn {
+  width: 150px;
+  height: 60px;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 24px;
+  background-color: #2D686B;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background-color: #2a5b5e;
+}
+
+
+
+.doc-contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 430px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+  gap: 20px;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  color: #2C2D33;
+  width: 319px;
+  height: 293px;
+  margin-top: 60px;
+  font-size: 18px;
+  justify-content: center;
+}
+
+.contacts>*>.fa-light {
+  width: 2px;
+  height: 2px;
+  text-align: right;
+  padding-left: 10px;
+}
+
+.address,
+.time-open,
+.phone-number,
+.email-address {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.link-btn {
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: auto;
+  gap: 20px;
+
+}
+
+.google-play-btn,
+.apple-app-btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  background: url('');
+  position: absolute;
+  margin-top: 25px;
+
+}
+
+.apple-app-btn {
+
+  left: 60px;
+}
+
+.google-play-btn {
+
+  left: 250px;
+}
+
+
+
+
+
+
+@media (max-width: 430px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 430px;
+    height: 2269px;
+    padding: 0;
+
+  }
+
+  section {
+    display: flex;
+  }
+
+  .doctors-app {
+    width: inherit;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .schedule-container {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: inherit;
+  }
+
+  .doc-profile,
+  .doc-schedule,
+  .doc-contacts {
+    display: flex;
+    align-content: center;
+    width: inherit;
+    padding: 0 10px;
+
+  }
+
+
+  .details ul li {
+    font-size: 18px;
+  }
+
+  .appointment {
+    margin: 10px 10px;
+    justify-content: center;
+  }
+
+  .doc-appointment-date,
+  .doc-appointment-time {
+    width: 430px;
+    flex-wrap: wrap;
+    padding: 10px;
+
+  }
+
+  .card {
+    flex-direction: row;
+    gap: 5px;
+
+  }
+
+  .morning-schedule {
+    flex-direction: row;
+    gap: 15px;
+
+  }
+
+  .date-card,
+  .time-schedule {
+    box-sizing: border-box;
+    width: 82px;
+    height: 104px;
+    border-radius: 5px;
+  }
+
+  .time-schedule {
+    box-sizing: border-box;
+    width: 82px;
+    border-radius: 5px;
+    gap: 15px;
+  }
+
+  .date-card.last-two {
+    display: flex;
+  }
+
+  .day {
+    width: 39px;
+    height: 27px;
+  }
+
+  .date {
+    width: 16px;
+    height: 27px;
+  }
+
+  .date>span {
+    margin: auto;
+  }
+
+  .month-year {
+    width: 73px;
+    height: 27px;
+  }
+
+  .day {
+    width: 82px;
+  }
+
+  .day,
+  .date,
+  .month-year {
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .address,
+  .time-open,
+  .phone-number,
+  .email-address {
+    flex-direction: row;
+  }
+
+  .book-now-btn {
+    width: 100%;
+    max-width: 200px;
+
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+
+  }
+
+  .link-btn {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-self: flex-end;
+    align-items: center;
+    margin-top: auto;
+    gap: 20px;
+
+  }
+
+  .google-play-btn,
+  .apple-app-btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 5px;
+    background: url('');
+    position: absolute;
+    justify-self: end;
+
+  }
+
+}
+
+@media screen and (min-width: 430px) {
+  .last-two {
+    display: flex;
+  }
+
+  .apple-app-btn {
+    top: 1090px;
+    left: 115px;
+  }
+
+  .google-play-btn {
+    top: 1090px;
+    left: 300px;
+  }
+
+  .card {
+    gap: 35px;
+  }
+
+}
