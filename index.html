@@ -6,117 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doctor's Appointment App</title>
 
-  <link rel="stylesheet" href="/athir/styles.css">
+  <link rel="stylesheet" href="styles.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid">
 
-    <div class="doctors-app">
+    <div class="doctors-app row">
 
-      <article class="doc-profile">
-        <div class="profile">
-          <div class="image-element"></div>
-          <div class="label">
-            <span class="doctors-name">د. شروق يوسف شلدان</span>
-            <span class="doctors-position">طب عام - فاطمة ا - جدة</span>
+      <section class="doc-profile col-xxl-3 ">
+        <div class="container">
+          <div class="profile mx-2">
+            <div class="image-element mx-auto"></div>
+            <div class="label text-center mt-2">
+              <span class="doctors-name d-block font-weight-bold">د. شروق يوسف شلدان</span>
+              <span class="doctors-position d-block">طب عام - فاطمة ا - جدة</span>
+            </div>
+
+          </div>
+          <div class="details mx-auto py-5 lh-1.5">
+            <ul class="container-fluid gap-3">
+              <li class="ls-2 mb-3">زميل الكلية الملكية الكندية في جراحة العظام.</li>
+              <li class="ls-2 mb-3">الزمالة الأمريكية في جراحة العظام الترميمية وتغيير المفاصل</li>
+              <li class="ls-2 mb-3">الزمالة الأمريكية في جراحة الركبة وإصابات الملاعب</li>
+              <li class="ls-2 mb-3">الزمالة الأمريكية في جراحة القدم والكاحل</li>
+              <li class="ls-2 mb-3">أستاذ مساعد واستشاري جراحة العظام</li>
+              <li class="ls-2 mb-3">أستاذ مساعد واستشاري جراحة العظام 2</li>
+              <li class="ls-2 mb-3">أستاذ مساعد واستشاري جراحة العظام 3</li>
+            </ul>
           </div>
         </div>
-        <div class="details">
-          <ul>
-            <li>زميل الكلية الملكية الكندية في جراحة العظام.</li>
-            <li>الزمالة الأمريكية في جراحة العظام الترميمية وتغيير المفاصل</li>
-            <li>الزمالة الأمريكية في جراحة الركبة وإصابات الملاعب</li>
-            <li>الزمالة الأمريكية في جراحة القدم والكاحل</li>
-            <li>أستاذ مساعد واستشاري جراحة العظام</li>
-            <li>أستاذ مساعد واستشاري جراحة العظام 2</li>
-            <li>أستاذ مساعد واستشاري جراحة العظام 3</li>
-          </ul>
-        </div>
-      </article>
-      
-      <section class="schedule-container">
-        <div class="doc-schedule">
-          
-          <h1 class="appointment">حجز موعد مع الطبيب</h1>
-          <div class="doc-appointment-date">
-            <div class="card">
-              <div class="date-card">
-                <span class="day">الاحد</span>
-                <span class="date">27</span>
-                <span class="month-year">AUG 2023</span>
+
+      </section>
+
+      <section class="doc-schedule col-xxl-6">
+        <div class="container mx-4">
+
+          <h1 class="appointment text-center mt-5" ass="ls-2 mb-3">حجز موعد مع الطبيب</h1>
+          <div class="doc-appointment-date my-5">
+            <div class="d-flex flex-wrap gap-4">
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاحد</span>
+                <span class="date d-block my-2 pb-2">27</span>
+                <span class="month-year d-block">AUG 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الاثنين</span>
-                <span class="date">28</span>
-                <span class="month-year">AUG 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاثنين</span>
+                <span class="date d-block my-2 pb-2">28</span>
+                <span class="month-year d-block">AUG 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الثلاثاء</span>
-                <span class="date">29</span>
-                <span class="month-year">AUG 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الثلاثاء</span>
+                <span class="date d-block my-2 pb-2">29</span>
+                <span class="month-year d-block">AUG 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الاربعاء</span>
-                <span class="date">30</span>
-                <span class="month-year">AUG 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاربعاء</span>
+                <span class="date d-block my-2 pb-2">30</span>
+                <span class="month-year d-block">AUG 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الخميس</span>
-                <span class="date">31</span>
-                <span class="month-year">AUG 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الخميس</span>
+                <span class="date d-block my-2 pb-2">31</span>
+                <span class="month-year d-block">AUG 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الاحد</span>
-                <span class="date">03</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاحد</span>
+                <span class="date d-block my-2 pb-2">03</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الاثنين</span>
-                <span class="date">04</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاثنين</span>
+                <span class="date d-block my-2 pb-2">04</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الثلاثاء</span>
-                <span class="date">05</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الثلاثاء</span>
+                <span class="date d-block my-2 pb-2">05</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الاربعاء</span>
-                <span class="date">06</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الاربعاء</span>
+                <span class="date d-block my-2 pb-2">06</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card">
-                <span class="day">الخميس</span>
-                <span class="date">07</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center">
+                <span class="day d-block my-2 pb-3">الخميس</span>
+                <span class="date d-block my-2 pb-2">07</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card last-two">
-                <span class="day">الخميس</span>
-                <span class="date">08</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center last-two">
+                <span class="day d-block my-2 pb-3">الخميس</span>
+                <span class="date d-block my-2 pb-2">08</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
-              <div class="date-card last-two">
-                <span class="day">الخميس</span>
-                <span class="date">09</span>
-                <span class="month-year">SEP 2023</span>
+              <div class="date-card flex-item text-center last-two">
+                <span class="day d-block my-2 pb-3">الخميس</span>
+                <span class="date d-block my-2 pb-2">09</span>
+                <span class="month-year d-block">SEP 2023</span>
               </div>
             </div>
-            <div class="arrow">
-              <div class="left"><i class="fa-light fa-circle-chevron-left"></i></div>
-              <div class="right"><i class="fa-light fa-circle-chevron-right"></i></div>
+            <div class="arrow mt-5 d-flex justify-content-center ">
+              <div class="left px-2 fs-3"><i class="fa-light fa-circle-chevron-left"></i></div>
+              <div class="right px-2 fs-3"><i class="fa-light fa-circle-chevron-right"></i></div>
             </div>
           </div>
 
-          <div class="doc-appointment-time">
+          <div class="doc-appointment-time my-5">
             <h1 class="morning-card">الفترة الصباحية</h1>
-            <div class="morning-schedule">
-              <div class="time-schedule">
+            <div class="morning-schedule d-flex flex-wrap gap-4 my-4">
+              <div class="time-schedule ">
                 <span class="time">08:00 ص</span>
               </div>
               <div class="time-schedule">
@@ -136,9 +142,9 @@
               </div>
             </div>
             <h1 class="afternoon-card">الفترة المسائية</h1>
-            <div class="morning-schedule">
-              <div class="time-schedule">
-                <span class="time">1:20 م</span>
+            <div class="afternoon-schedule d-flex flex-wrap gap-4 my-4">
+              <div class="time-schedule ">
+                <span class="time ">1:20 م</span>
               </div>
               <div class="time-schedule">
                 <span class="time">2:00 م</span>
@@ -179,46 +185,63 @@
             </div>
           </div>
 
-
         </div>
 
-        
-        <button class="book-now-btn">احجز الان</button>
+
+        <div class="">
+          <div class="d-flex align-content-center ">
+            <button class="mx-auto book-now-btn">احجز الان</button>
+          </div>
+        </div>
 
       </section>
 
-      
+      <section class="doc-contacts col-xxl-3">
+        <div class="container d-flex flex-column">
 
-      <section class="doc-contacts">
-        <div class="contacts">
-          <h1 class="contact-us">للتواصل معنا</h1>
-          <div class="address">
-            <i class="fa-light fa-location-dot"></i>
-            <span class="info">جدة - شارع صاري - بوابة صاري -مبنى B الدور
-              الثاني - مكتب 216</span>
+          <div class="contact-info mx-4  ">
+
+            <h2 class="contact-us text-center my-5">للتواصل معنا</h2>
+
+            <div class="address row my-3">
+              <i class="fa-light fa-location-dot col-sm-1 fs-3"></i>
+              <span class="info col-sm-11 my-auto">جدة - شارع صاري - بوابة صاري -مبنى B الدور
+                الثاني - مكتب 216</span>
+            </div>
+
+            <div class="time-open row my-3">
+              <i class="fa-light fa-location-dot col-sm-1 fs-3"></i>
+              <span class="info col-sm-11 my-auto">من السبت الى الخميس - من الساعه 9 ص
+                الى 9 م</span>
+            </div>
+
+            <div class="phone-number row my-3">
+              <i class="fa-light fa-phone col-sm-1 fs-3"></i>
+              <span class="info col-sm-11 my-auto">920020264</span>
+            </div>
+
+            <div class="email-address row my-3">
+              <i class="fa-light fa-envelope col-sm-1 fs-3 "></i>
+              <span class="info col-sm-11 my-auto">info@athir.com.sa</span>
+            </div>
+
           </div>
-          <div class="time-open">
-            <i class="fa-light fa-location-dot"></i>
-            <span class="info">من السبت الى الخميس - من الساعه 9 ص
-              الى 9 م</span>
+
+          <div class="d-flex flex-row justify-content-center">
+            <div class="link-btn d-flex gap-5">
+                
+                <div class="link-group">
+                  <button class="google-play mx-3">احجز الان</button>
+                  <button class="apple-app mx-3">احجز الان</button>
+                </div>
+                
+              </div>
+            </div>
+
           </div>
-          <div class="phone-number">
-            <i class="fa-light fa-phone"></i>
-            <span class="info">920020264</span>
-          </div>
-          <div class="email-address">
-            <i class="fa-light fa-envelope"></i>
-            <span class="info">info@athir.com.sa</span>
-          </div>
-        </div>
-        <div class="link-btn">
-          <button class="google-play-btn">google</button>
-          <button class="apple-app-btn">apple</button>
+
         </div>
       </section>
-
-      
-     
 
     </div>
 
