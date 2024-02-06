@@ -1,19 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Tajawal';
-
-}
-
-body, html{
-  width: 100%;
-  height: 100%;
-
-}
-
-.container{
-  height: 90vh;
-}
 
 .image-element {
   width: 245px;
@@ -25,34 +9,10 @@ body, html{
   margin-top: 60px;
 }
 
-.doctors-app {
-  direction: rtl;
-}
-
-.doc-profile,
-.doc-schedule {
-  border-left: 1px solid #00000020;
-}
-
-.container-box{
-  display: flex;
-  flex-direction: column;
-}
-
-.container-box ul li{
-  font-size: 25px;
-}
-.doctors-name{
-  font-size: 20px;
-}
-.doctors-position{
-  font-size: 20px;
-}
-
 .date-card {
   box-sizing: border-box;
-  width: 145px;
-  height: 165px;
+  width: 140px;
+  height: 180px;
   display: block;
   border: 1px solid #00000020;
   border-radius: 15px;
@@ -68,93 +28,50 @@ body, html{
   cursor: pointer;
 }
 
-.day {
-  box-sizing: border-box;
-  border-bottom: 1px solid #00000020;
-  font-weight: bold;
-  margin-bottom: 10px;
-
-}
-
 .date {
   font-weight: bold;
-  font-size: 30px;
+  font-size: 35px;
   color: #2D686B;
+}
+.month-year{
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.fa-solid, 
+.fas{
+  color: #2D686B;
+ 
 }
 
 .time-schedule{
   display: flex;
   width: 113px;
   height: 53px;
-  border: 1px solid #00000020;
   border-radius: 15px;
   justify-content: center;
+  align-items: center;
 }
 
-.time{
-  margin: auto;
-  font-size: 20px;
-}
-
-.morning-schedule,
-.afternoon-schedule {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-
-  align-items: center; 
-}
-
-.time-schedule {
-  text-align: center;
-}
 .book-now-btn{
-  width: 155px;
-  height: 60px;
   color: #ffffff;
   background-color: #2D686B;
-  border: 1px solid #00000020;
-  border-radius: 20px;
   outline: none;
-
 }
 .book-now-btn:hover{
   background-color: #38878b;
+  margin-bottom: 20px;
 }
-
 .google-play,
 .apple-app{
-  width: 200px;
-  height: 60px;
+  width: 175px;
+  height: 50px;
   border-radius: 15px;
   border: 1px solid #00000020;
   text-align: center;
   background-size: cover; 
   margin: 0 15px;
 }
-
-.doc-contacts{
- flex-grow: 1;
- flex-direction: column;
-
- display: flex;
- justify-content: space-between;
- align-items: center;
-}
-
-.contact-info >*> .fa-solid{
-  color: #13595d;
-  align-items: left;
-}
-
-.info{
-  font-size: 25px;
-}
-
-.linkgroup{
-  margin-bottom: 10px;
-}
-
 .google-play{
   background-image: url('google-icon.png');
 }
@@ -167,10 +84,38 @@ body, html{
 .apple-app:hover{
   border: 2px solid #3b6364f9;
 }
-
-@media (max-width:1400px) {
-  .link-group{
-    padding: 25px 0;
-  }
+@media (max-width:430px){
   
+  .date-card > .px-4{
+    padding: 0 !important;
+    margin-top: 0 !important;
+    font-size: 10px;
+  }
+  .date-card {
+    box-sizing: border-box;
+    width: 75px;
+    height: 140px;
+    display: block;
+    border: 1px solid #00000020;
+    border-radius: 15px;
+   
+  }
+
+  .time-schedule{
+    width: 95px;
+    height: 53px;
+    border-radius: 15px;
+   
+  }
+  .afternoon-schedule{
+    column-gap: 4px !important;
+  }
+
+  .doc-appointment-time> .justify-content-start{
+    justify-content: space-between !important;
+  }
+  .doc-appointment-time> .justify-content-start:last-child{
+    justify-content: space-between !important;
+  }
+
 }
