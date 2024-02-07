@@ -1,4 +1,9 @@
 
+
+.container-box, 
+.schedule{
+  border-left: 1px solid #00000020;
+}
 .image-element {
   width: 245px;
   height: 309px;
