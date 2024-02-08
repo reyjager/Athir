@@ -89,6 +89,15 @@
 .apple-app:hover{
   border: 2px solid #3b6364f9;
 }
+.check-icon {
+  position: absolute;
+  font-size: 25px;
+  top: -13px; 
+  left: -13px;
+  z-index: 2;
+  
+}
+
 @media (max-width:430px){
   
   .date-card > .px-4{
