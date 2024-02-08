@@ -32,3 +32,6 @@ input:focus {
     margin-bottom: 20px;
     color: white;
   }
+  .flag-option:hover{
+    background-color: hwb(180 69% 30% / 0.324);
+  }
