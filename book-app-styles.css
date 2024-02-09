@@ -1,37 +1,110 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.outline-none{
+.outline-none {
     outline: none !important;
     padding: 2px;
 }
+
 input {
     border: none !important;
     outline: none !important;
 }
+
 .border-left {
     border-left: 1px solid #ccc !important;
 }
 
 input:focus {
-    border: 0 !important; 
-    box-shadow: 0 !important; 
+    border: 0 !important;
+    box-shadow: 0 !important;
 }
 
 
-.book-now-btn{
+.book-now-btn {
     color: #ffffff;
     background-color: #2D686B;
     outline: none;
-  }
-  .book-now-btn:hover{
+    text-decoration: none;
+}
+
+.book-now-btn:hover {
     background-color: #38878b;
     margin-bottom: 20px;
     color: white;
-  }
-  .flag-option:hover{
+}
+
+.flag-option:hover {
     background-color: hwb(180 69% 30% / 0.324);
-  }
+}
+
+.message {
+    color: #696969;
+}
+
+.code-container {
+    direction: ltr;
+    justify-content: flex-end;
+}
+
+.code-sent {
+    display: flex;
+    border: 2px solid #04c004;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: #000000;
+}
+
+.code-sent:last-child {
+    border: 2px solid rgb(188, 186, 186);
+}
+
+
+.table {
+    margin-top: 45px;
+    width: 673px;
+    height: 321px;
+    border: 1px solid #7d7c7d;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid #7d7c7d;
+    margin: auto;
+    padding: 10px !important;
+    align-items: center;
+   
+    
+}
+.table tr {
+    border: 1px solid #7d7c7d; 
+
+}
+
+td{
+    border-left: 1px solid #7d7c7d6c;
+    border-width: 1px !important;
+}
+table tbody th,
+table tbody td {
+    font-size: 16px;
+    vertical-align: middle;
+}
+.font-weight {
+    font-weight: bolder !important;
+}
+.caption, .app-details{
+    font-size: 25px;
+    font-weight: bold;
+}
+.app-details{
+    font-size: 23px;
+    font-weight: bold;
+}
